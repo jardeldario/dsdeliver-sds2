@@ -6,12 +6,12 @@ import { useNavigation } from '@react-navigation/native';
 function Header() {
   const navigation = useNavigation();
 
-  const handleOnPres = () => {
+  const handleOnPress = () => {
     navigation.navigate('Home');
   }
 
   return (
-    <TouchableWithoutFeedback onPress={handleOnPres}>
+    <TouchableWithoutFeedback onPress={handleOnPress}>
       <View style={styles.container}>
         <Image source={require('../assets/logo.png')} />
         <Text style={styles.text}>DS Delivery</Text>
